@@ -60,7 +60,7 @@ class TumblrBlog:
             return latestPost
         latestPost = latestPost.replace('<p>', '<p style="color:white;">')
         latestPost = '<div style="padding:5px;background-color:#34526f;border-radius:5px;">{}</div>'.format(latestPost)
-        latestPost += '<small style="color: rgba(1,1,1,0.5);"><a href=\"https://github.com/valknight/Hellbug\">Hellbug</a> - made with <a href=\"https://github.com/valknight/cohost.py\">cohost.py</a></small>'
+        latestPost += '<small style="color: rgba(1,1,1,0.5);">synced from Tumblr with <a href=\"https://github.com/valknight/Hellbug\">Hellbug</a> - made with <a href=\"https://github.com/valknight/cohost.py\">cohost.py</a></small>'
         return latestPost
     
     @property
