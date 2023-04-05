@@ -69,5 +69,5 @@ class TumblrBlog:
 
 
 if __name__ == "__main__":
-    blog = TumblrBlog("vallerie-cohost-demo.tumblr.com")
+    blog = TumblrBlog("vallerie-cohost")
     print(blog.latestPostWithCohostStyling)
