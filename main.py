@@ -62,7 +62,7 @@ def main():
     print('logging into cohost...')
     cohostProject = getCohostProject()
     print(blog.latestPost['tags'])
-    postBlocks = [MarkdownBlock(blog.latestPostAsHTML), MarkdownBlock('<small>tumblr sync powered by cohost.py</small>')]
+    postBlocks = [MarkdownBlock(blog.latestPostWithCohostStyling))]
     tags = blog.latestPost['tags']
     tags.append('hellbug')
     tags.append('bot')
