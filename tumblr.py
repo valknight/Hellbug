@@ -59,7 +59,9 @@ class TumblrBlog:
         if latestPost == "":
             return latestPost
         latestPost = latestPost.replace('<p>', '<p style="color:white;">')
-        latestPost = '<div style="padding:5px;background-color:#34526f;border-radius:5px;">{}</div>'.format(latestPost)
+        for x in range(1, 7):
+            latestPost = latestPost.replace('<h{}>'.format(x), '<h{} style="color:white;">'.format(x))
+        latestPost = '<div style="border:5px;padding:15px;background-color:#34526f;border-radius:5px;">{}</div>'.format(latestPost)
         latestPost += '<small style="color: rgba(1,1,1,0.5);">synced from Tumblr with <a href=\"https://github.com/valknight/Hellbug\">Hellbug</a> - made with <a href=\"https://github.com/valknight/cohost.py\">cohost.py</a></small>'
         return latestPost
     
@@ -69,5 +71,5 @@ class TumblrBlog:
 
 
 if __name__ == "__main__":
-    blog = TumblrBlog("vallerie-cohost")
+    blog = TumblrBlog("tumblr.valknight.xyz")
     print(blog.latestPostWithCohostStyling)
