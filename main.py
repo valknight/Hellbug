@@ -62,7 +62,7 @@ def main():
     print('logging into cohost...')
     cohostProject = getCohostProject()
     print(blog.latestPost['tags'])
-    postBlocks = [MarkdownBlock(blog.latestPostWithCohostStyling))]
+    postBlocks = [MarkdownBlock(blog.latestPostWithCohostStyling)]
     tags = blog.latestPost['tags']
     tags.append('hellbug')
     tags.append('bot')
