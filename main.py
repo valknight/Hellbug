@@ -64,7 +64,9 @@ def main():
     print(blog.latestPost['tags'])
     postBlocks = [MarkdownBlock(blog.latestPostAsHTML), MarkdownBlock('<small>tumblr sync powered by cohost.py</small>')]
     tags = blog.latestPost['tags']
-    tags.append('tumblr-sync')
+    tags.append('hellbug')
+    tags.append('bot')
+    tags.append('cohost.py')
     post = cohostProject.post(blog.latestPost['summary'], postBlocks, tags=tags)
     if post is None:
         print('posted to cohost, but, not able to access (could be a draft!)')
