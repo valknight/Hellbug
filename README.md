@@ -10,7 +10,7 @@ Sync your posts Hellsite (tumblr dot com) to Cohost.org
 3. Setup the following environment variables:
 
 - `TUMBLR_KEY` - your API key for Tumblr
-- `TUMBLR_URL` - the URL of the Tumblr blog you wish to sync
+- `TUMBLR_URL` - the URL of the Tumblr blog you wish to sync. this does support custom domains!
 - `COHOST_EMAIL` - the email you use to login to Cohost
 - `COHOST_PASS` - your password for Cohost
 -  [Optional] `COHOST_PROJECT` - the page you want to post to on Cohost. If not specified, will use your default page
