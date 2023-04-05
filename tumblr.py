@@ -22,9 +22,9 @@ class TumblrBlog:
     
     def refresh(self):
         if (tumblrTag != ""):
-            self.profile = client.posts(self.tumblrUrl, type="text", tag=tumblrTag)
+            self.profile = client.posts(self.tumblrUrl, tag=tumblrTag)
         else:
-            self.profile = client.posts(self.tumblrUrl, type="text")
+            self.profile = client.posts(self.tumblrUrl)
         if self.profile.get("meta", {}).get("status") == 404:
             raise AttributeError("\"{}\" is not a valid tumblr URL - make sure you didn't include https://".format(self.tumblrUrl))
 
